@@ -7,6 +7,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 100px;
+  padding-top: 50px;
+}
+
+.page {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */
