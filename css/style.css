@@ -1,8 +1,15 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1400px;
   margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -12,5 +19,125 @@
 
 .page {
   margin-top: 50px;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapp {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.upload {
+  width: 400px;
+  height: 300px;
+  border: 2px dotted #ccc;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eeeeee;
+}
+
+.upload--active {
+  background-color: #b5cefd;
+  border-color: #0650d8;
+}
+
+.upload__title {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  font-size: 18px;
+  color: #999;
+}
+
+.bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 15px;
+}
+
+.btn-upload {
+  border: none;
+  background-color: #023d7c;
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 10px 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-reset {
+  border: none;
+  background-color: #7c0264;
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 10px 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.file-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.file-list .file-item {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin-right: 10px;
+  -webkit-box-shadow: 2px 0px 6px 0px rgba(34, 60, 80, 0.12);
+          box-shadow: 2px 0px 6px 0px rgba(34, 60, 80, 0.12);
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.file-list .file-item:hover {
+  -webkit-box-shadow: 2px 0px 15px 0px rgba(34, 60, 80, 0.12);
+          box-shadow: 2px 0px 15px 0px rgba(34, 60, 80, 0.12);
+}
+
+.file-list img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=style.css.map */
